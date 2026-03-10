@@ -50,7 +50,7 @@ const Notes = () => {
             onChange={(e) => setDetail(e.target.value)}
             className="border-2 h-50 outline-none p-2"
           ></textarea>
-          <button className="border-2 bg-white text-2xl font-bold text-black rounded-2xl p-2">
+          <button className="cursor-pointer active:scale-95 border-2 bg-white text-2xl font-bold text-black rounded-2xl p-2">
             Add Note
           </button>
         </form>
@@ -63,7 +63,7 @@ const Notes = () => {
           {task.map((items, idx) => (
             <div
               key={idx}
-              className="h-62 w-42 bg-white text-black flex flex-col justify-between rounded-2xl"
+              className="h-62 w-42 bg-cover bg-[url('https://pngimg.com/uploads/sticky_note/sticky_note_PNG18928.png')] text-black flex flex-col justify-between rounded-2xl"
             >
               <div>
                 <h2 className="m-5 text-2xl font-bold border-b-2 py-2">{items.title}</h2>
@@ -72,7 +72,7 @@ const Notes = () => {
               <div>
                 <button onClick={()=>{
                   deleteHandler(idx)
-                }} className="bg-red-500 rounded-2xl  text-white p-2 mx-12 my-3">
+                }} className="bg-red-500 rounded-2xl cursor-pointer active:scale-90 text-white p-2 mx-12 my-3">
                   Delete
                 </button>
               </div>

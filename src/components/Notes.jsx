@@ -67,7 +67,7 @@ const Notes = () => {
             >
               <div>
                 <h2 className="m-5 text-2xl font-bold border-b-2 py-2">{items.title}</h2>
-                <p className="m-5 font-black font-bold">{items.detail}</p>
+                <p className="m-5 text-black font-bold">{items.detail}</p>
               </div>
               <div>
                 <button onClick={()=>{
